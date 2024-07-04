@@ -1,0 +1,40 @@
+ class TrolleyBag{
+
+public static void main(String[] bags){
+
+System.out.println("main started");
+
+getProperties();
+
+System.out.println("main ended");
+
+}
+
+public static void getProperties(){
+
+System.out.println("getProperties method started");
+  
+  System.out.println("The Properties of Chopper are");
+  System.out.println("-------------");
+  
+  String brandName = "Safari Pentagon";
+  int price = 1599;
+  String color = "Cyan Blue";
+  String warranty = "3 years;
+  
+  System.out.println("The Brand Name of the TrolleyBag is: " +brandName);
+  System.out.println("The color of the TrolleyBag is: " +color);
+  System.out.println("The price of thr TrolleyBag is: " +price);
+  System.out.println("The Warranty of TrolleyBag is: " +warranty);
+  
+
+System.out.println("getProperties method ended");
+
+
+return;
+
+
+}
+
+
+}
