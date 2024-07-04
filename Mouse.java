@@ -1,13 +1,17 @@
 class Mouse{
 
-public static void main(String[] zebronics){
+public static void main(String[] wireless){
 
-System.out.println("If you’re looking at compact and stylish design look no further with the Zebronics Power mouse.");
-System.out.println("It has an advanced optical sensor technology that gives you high precision");
-System.out.println("It comes with an easy to install mechanism where you can just plug and play.");
-System.out.println("Compact and stylish design, Advanced optical sensor technology with Resolution 1200dpi");
-System.out.println("Warranty - 1 year from the date of purchase");
 
+String brandName = "logitech";
+int price = 657;
+String color = "black";
+String type = "wireless";
+
+System.out.println("The name of the brand is:" + brandName);
+System.out.println("The price of the mouse is:" + price);
+System.out.println("The color of the mouse is:" + color);
+System.out.println("The type of the mouse is:" + type);
 
 
 
