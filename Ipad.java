@@ -1,12 +1,15 @@
 class Ipad{
+	
+	
+static	String brandName = "Apple";
+static int price = 74900;
+static int size = 128;
+static String color = "blue";
+
+
 
 public static void main(String[] apple){
 
-
-String brandName = "Apple";
-int price = 74900;
-int size = 128;
-String color = "blue";
 
 
 System.out.println("The name of the brand is:" + brandName);

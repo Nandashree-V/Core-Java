@@ -1,13 +1,13 @@
 class Camera{
 
+
+static String brandName = "Fujifilm";
+static int price = 157990;
+static int size = 29;
+static String color = "black";
+static String type = "digital";
+
 public static void main(String[] digital){
-
-
-String brandName = "Fujifilm";
-int price = 157990;
-int size = 29;
-String color = "black";
-String type = "digital";
 
 System.out.println("The name of the brand is:" + brandName);
 System.out.println("The price of the camera is:" + price);

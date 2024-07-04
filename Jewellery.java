@@ -1,13 +1,13 @@
 class Jewellery{
 
+ static String brandName = "PALMONAS";
+ static int price = 497;
+ static int size = 7;
+ static String color = "yellow";
+ static String type = "Metal";
+
 public static void main(String[] ring){
 
-
-String brandName = "PALMONAS";
-int price = 497;
-int size = 7;
-String color = "yellow";
-String type = "Metal";
 
 System.out.println("The name of the brand is:" + brandName);
 System.out.println("The price of the ring is:" + price);

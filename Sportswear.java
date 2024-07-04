@@ -1,13 +1,14 @@
 class SportsWear{
+	
+	
+
+ static String brandName = "Nike";
+static int price = 499;
+static int size = 32;
+ static String color = "red";
+static String type = "polyster";
 
 public static void main(String[] shorts){
-
-
-String brandName = "Nike";
-int price = 499;
-int size = 32;
-String color = "red";
-String type = "polyster";
 
 System.out.println("The name of the brand is:" + brandName);
 System.out.println("The price of the shorts is:" + price);

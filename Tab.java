@@ -1,12 +1,12 @@
 class Tab{
 
+ static String brandName = "Samsung";
+static int price = 22999;
+ static int size = 4;
+ static String color = "Gray";
+
+
 public static void main(String[] galaxy){
-
-
-String brandName = "Samsung";
-int price = 22999;
-int size = 4;
-String color = "Gray";
 
 
 System.out.println("The name of the brand is:" + brandName);

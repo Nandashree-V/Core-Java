@@ -1,11 +1,11 @@
 class Keyboard{
+	
+	static String brandName = "Zebronics";
+static int price = 249;
+static String color = "Black";
+
 
 public static void main(String[] pc){
-
-
-String brandName = "Zebronics";
-int price = 249;
-String color = "Black";
 
 
 System.out.println("The name of the brand is:" + brandName);

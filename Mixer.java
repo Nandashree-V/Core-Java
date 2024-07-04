@@ -1,13 +1,13 @@
 class Mixer{
+	
+	
+ static String brandName = "McCoy";
+static int price = 3900;
+static double capacity = 1.5;
+static String color = "white";
+static String type = "Stainless steel";
 
 public static void main(String[] grinder){
-
-
-String brandName = "McCoy";
-int price = 3900;
-double capacity = 1.5;
-String color = "white";
-String type = "Stainless steel";
 
 System.out.println("The name of the brand is:" + brandName);
 System.out.println("The price of the mixer is:" + price);

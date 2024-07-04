@@ -1,13 +1,13 @@
 class Tripod{
+	
+	
+	static String brandName = "Tygot";
+static int price = 849;
+static int size = 10;
+static String color = "multicolor";
+static String type = "Metal";
 
 public static void main(String[] ring){
-
-
-String brandName = "Tygot";
-int price = 849;
-int size = 10;
-String color = "multicolor";
-String type = "Metal";
 
 System.out.println("The name of the brand is:" + brandName);
 System.out.println("The price of the tripod is:" + price);

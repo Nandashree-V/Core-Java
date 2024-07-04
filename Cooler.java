@@ -1,13 +1,13 @@
 class cooler{
+	
+	static String brandName = "Hindware";
+static int price = 5497;
+static int capacity = 2200;
+static String color = "grey";
+static String type = "Freestanding";
+
 
 public static void main(String[] ac){
-
-
-String brandName = "Hindware";
-int price = 5497;
-int capacity = 2200;
-String color = "grey";
-String type = "Freestanding";
 
 System.out.println("The name of the brand is:" + brandName);
 System.out.println("The price of the cooler  is:" + price);

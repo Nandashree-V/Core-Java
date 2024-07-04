@@ -1,13 +1,14 @@
 class Kurta{
+	
+	
+ static String brandName = "MYX";
+static int price = 300;
+ static int size = 28;
+ static String color = "yellow";
+static String type = "causal";
+
 
 public static void main(String[] amazon){
-
-
-String brandName = "MYX";
-int price = 300;
-int size = 28;
-String color = "yellow";
-String type = "causal";
 
 System.out.println("The name of the brand is:" + brandName);
 System.out.println("The price of the kurta is:" + price);

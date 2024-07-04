@@ -1,13 +1,15 @@
 class Jacket{
 
+static String brandName = "Paklon";
+static int price = 1119;
+static int size = 27;
+static String color = "yellow";
+static String type = "cooton";
+
+
+
+
 public static void main(String[] cotton){
-
-
-String brandName = "Paklon";
-int price = 1119;
-int size = 27;
-String color = "yellow";
-String type = "cooton";
 
 System.out.println("The name of the brand is:" + brandName);
 System.out.println("The price of the jacket is:" + price);
