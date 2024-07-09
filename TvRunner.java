@@ -4,8 +4,9 @@ public static void main(String[] args){
 
 System.out.println("main started");
 
-Tv.turnOn();
-Tv.turnOff();
+ boolean connect = Tv.onOrOff();
+ connect = Tv.onOrOff();
+System.out.println("The Telivision is connected:" +connect) ;
 System.out.println("main ended");
 
 

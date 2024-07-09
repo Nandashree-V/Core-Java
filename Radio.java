@@ -2,29 +2,16 @@ class Radio{
 
 static boolean isConnected = false;
  
-public static void turnOn(){
-System.out.println("The turnOn method Started");
+public static boolean onOrOff(){
  
     if(isConnected==false){
 	  isConnected= true;
-	  System.out.println("The Radio is turned ON..!");
 	}
-System.out.println("The turnOn method is ended");
-return ;
-
-}
-
-public static void turnOff(){
-
-System.out.println("The turnOff method is started");
-
-         if(isConnected==true){
+	 else if(isConnected==true){
 		    isConnected=false;
-			System.out.println("The Radio is turned Off...!");
-		 }
-		 System.out.println("The turnOff method is ended");
-		 return;
+	}
 
+return isConnected;
 
 }
 
@@ -33,3 +20,8 @@ System.out.println("The turnOff method is started");
 
 
 }
+
+
+
+
+
