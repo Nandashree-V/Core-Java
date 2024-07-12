@@ -8,9 +8,7 @@ static int min=0;
 public static boolean onOrOff(){
 System.out.println("The turnOn method Started");
  
-   // if(isConnected==false){
-	   if(!isConnected)  isConnected = true;
-	   else isConnected=false;	
+   isConnected = (isConnected == false) ? true : false;	
 System.out.println("The turnOn method is ended");
 return isConnected;
 

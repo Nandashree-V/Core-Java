@@ -8,15 +8,13 @@ static int min=0;
 public static boolean onOrOff(){
 System.out.println("The turnOn method Started");
  
-   // if(isConnected==false){
-	   if(!isConnected)  isConnected = true;
-	   else isConnected=false;	
+   isConnected = (isConnected == false) ? true : false;
 System.out.println("The turnOn method is ended");
 return isConnected;
 
 }
 public static void increaseVolume(){
-System.out.println("The turnOn method Started");
+System.out.println("The increaseVolume method Started");
 if(isConnected==true){
 	currentVolume = currentVolume + 1;
 	if(currentVolume < max){
@@ -30,10 +28,11 @@ else{
 	System.out.println("Speaker is not truned on");
 }
 	
-	System.out.println("The turnOn method is ended");
+	System.out.println("The increaseVolume method is ended");
 	
 }
 public static void decreaseVolume(){
+	System.out.println("The decreaseVolume method started");
 	if(isConnected=true){
 		currentVolume = currentVolume-1;
 		if(currentVolume>min){
@@ -46,6 +45,7 @@ public static void decreaseVolume(){
 	else{
 		System.out.println("Speaker is not turned on");
 	}
+	System.out.println("decreaseVolume method ended");
 	
 }
 

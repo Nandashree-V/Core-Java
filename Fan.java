@@ -7,12 +7,7 @@ static int minSpeed =0;
 
  
 public static boolean onOrOff(){
- 
-    if(isConnected==false)  isConnected= true;
-	
-	 else if(isConnected==true)
-		    isConnected=false;
-	
+ isConnected = (isConnected == false) ? true : false;
 
 return isConnected;
 
