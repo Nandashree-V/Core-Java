@@ -6,91 +6,48 @@ public static double searchPriceByFoodNames(String foodName){
 System.out.println("searchPriceByFoodNames method started");
 
 
-if(foodName == "Tandoori Paneer Tikka"){
-      cost = 295;
-	  return cost;
-}
-if(foodName == "Mutton Haleem"){
-	cost = 415;
-	return cost;
-}
-if(foodName=="Tandoori Chicken Tikka"){
-	cost = 315;
-	return cost;
-}
-if(foodName == "Tandoori Chicken(full)"){
-	cost = 485;
-	return cost;
-}
-if(foodName== "Chicken Sholey Kebab"){
-	cost = 330;
-	return cost;
-}
-if(foodName == "Chicken mallai kebab"){
-	cost = 330;
-	return cost;
-}
-if(foodName == "Palak paneer"){
-	cost = 225;
-	return cost;
-}
-if(foodName == "Chicken Makhanwala"){
-	cost = 270;
-	return cost;
-}
+if(foodName == "Tandoori Paneer Tikka") return cost= 295;
 
-if(foodName == "kadadi Chicken"){
-	cost = 290;
-	return cost;
-}
-if(foodName == "Mutton rogan Josh"){
-	cost = 305;
-	return cost;
-}
-if(foodName == "Keema Masala"){
-	cost = 315;
-	return cost;
-}
-if(foodName== "Brain pepper Fry"){
-	cost = 385;
-	return cost;
-}
-if(foodName == "Dal Fry"){
-	cost = 200;
-	return cost;
-}
-if(foodName == "Mutton Biryani"){
-	cost= 390;
-	return cost;
-}
-if(foodName == "Sholey gobi"){
-	cost = 245;
-	return cost;
-}
-if(foodName == "Panner roll"){
-	cost = 160;
-	return cost;
-}
-if(foodName == "Egg Masala" ){
-	cost = 250;
-	return cost;
-}
-if(foodName == "Chicken 65"){
-	cost = 330;
-	return cost;
-}
-if(foodName == "Chicken Peeper Fry"){
-	cost= 330;
-	return cost;
-}
-if(foodName== "Chilli Chicken"){
-	cost = 305;
-	return cost;
-}
-if(foodName == "Chicken Manchurian"){
-	cost = 305;
-	return cost;
-}
+if(foodName == "Mutton Haleem")	return cost= 415;
+
+if(foodName=="Tandoori Chicken Tikka") return cost= 315;
+
+if(foodName == "Tandoori Chicken(full)") return cost= 485;
+
+if(foodName== "Chicken Sholey Kebab") return cost = 330;
+
+if(foodName == "Chicken mallai kebab")	return cost = 330;
+
+if(foodName == "Palak paneer") return cost = 225;
+
+if(foodName == "Chicken Makhanwala") return cost = 270;
+
+if(foodName == "kadadi Chicken") return cost= 290;;
+
+if(foodName == "Mutton rogan Josh") return cost= 305;
+
+if(foodName == "Keema Masala") return cost= 315;
+
+if(foodName== "Brain pepper Fry") return cost= 385;
+
+if(foodName == "Dal Fry") return cost = 200;
+
+if(foodName == "Mutton Biryani")  return cost= 390;
+
+if(foodName == "Sholey gobi") return cost = 245;
+
+if(foodName == "Panner roll") return cost= 160;
+
+if(foodName == "Egg Masala" )	return cost = 250;
+
+if(foodName == "Chicken 65")	return cost= 330;
+
+if(foodName == "Chicken Peeper Fry")	return cost= 330;
+
+if(foodName== "Chilli Chicken")	return cost= 330;
+
+if(foodName == "Chicken Manchurian")	return cost = 305;
+
 else{
 	 System.out.println("Food Name doesnot match");
 }
