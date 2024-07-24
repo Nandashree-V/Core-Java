@@ -13,10 +13,18 @@ class LinkedIn{
 	static String ind;
 	static String edu;
 
-public static boolean createLinkedlnAccount(String firstName, String lastName,String emailId, String pwd,String confirmPwd,String country,int pinCode, String company, String role, String industry,String education){
+public static boolean createLinkedlnAccount(String firstName, String lastName,String emailId, String pwd,String confirmPwd,String country,
+                                           int pinCode, String company, String role, String industry,String education){
 	boolean isLinkedlnCreated = false;
 	
-	boolean isfirstNameInvalid = false;
+	isLinkedlnCreated = checkValidation(firstName,lastName,emailId,pwd,confirmPwd,country,pinCode,company,role,industry,education);
+	return isLinkedlnCreated;
+}
+    
+	public static boolean checkValidation(String firstName, String lastName,String emailId, String pwd,String confirmPwd,String country,
+	                                   int pinCode, String company, String role, String industry,String education){
+		boolean isValidated = false;
+		boolean isfirstNameInvalid = false;
 	boolean islastNameInvalid = false;
 	boolean isemailIdInvalid = false;
 	boolean ispwdInvalid = false;
@@ -121,13 +129,14 @@ public static boolean createLinkedlnAccount(String firstName, String lastName,St
 		}
 	
 	
-	if(isfirstNameInvalid==true && islastNameInvalid==true && isemailIdInvalid== true && ispwdInvalid== true &&isconfirPwdInvalid== true && iscountryInvalid== true &&ispinCodeInvalid== true &&iscompanyInvalid== true&& isroleInvalid==true && isindustryInvalid== true && iseducationInvalid==true){
+	if(isfirstNameInvalid==true && islastNameInvalid==true && isemailIdInvalid== true && ispwdInvalid== true &&isconfirPwdInvalid== true && iscountryInvalid== true &&ispinCodeInvalid== true 
+	            &&iscompanyInvalid== true&& isroleInvalid==true && isindustryInvalid== true && iseducationInvalid==true){
 				
-				isLinkedlnCreated = true;
+				isValidated = true;
+				}
+				return isValidated;
+	
 	}
-	return isLinkedlnCreated;
-}
-    
 	public static void readLinkedlnAccount(){
 		
 		System.out.println("details...");

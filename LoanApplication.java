@@ -8,13 +8,19 @@ class LoanApplication{
 	static String roi;
 	public static boolean createLoanApplication(String applicantName, String bankName, int creditScore, String loanType, String yearsOfLoan, String rateOfInterset){
 		                                   
-										 boolean  isLoanApplicationCreated = false;
-										 boolean isLoanApplicantNameValid = false;
+										  boolean  isLoanApplicationCreated = false;
+								isLoanApplicationCreated=loanApplicationValidation(applicantName,bankName,creditScore,loanType,yearsOfLoan,rateOfInterset);		  
+										 
+				   return isLoanApplicationCreated;
+}
+public static boolean loanApplicationValidation(String applicantName, String bankName, int creditScore, String loanType, String yearsOfLoan, String rateOfInterset){
+	                                       boolean isValidated = false;
+	                                       boolean isLoanApplicantNameValid = false;
 										  boolean  isNameOfBankValid = false;
 										  boolean  isTypeOfLoanValid = false;
 										  boolean  isYearsOfloanValid = false;
-										boolean   isLoanCreditScoreValid = false;
-										 boolean   isRateOfIntersetValid = false;
+										  boolean   isLoanCreditScoreValid = false;
+										  boolean   isRateOfIntersetValid = false;
 										   
 										   if(applicantName != null){
 											   loanApplicantName = applicantName;
@@ -61,11 +67,10 @@ class LoanApplication{
 										   
    if(isLoanApplicantNameValid ==true && isNameOfBankValid==true && isLoanCreditScoreValid==true && isTypeOfLoanValid==true && isRateOfIntersetValid==true 
                    && isYearsOfloanValid==true){
-					   isLoanApplicationCreated = true;
+					   isValidated = true;
 				   }
-				   return isLoanApplicationCreated;
+				   return isValidated;
 }
-
    public static void readLoanApplicationDetails(){
 	   		System.out.println(" Fetch details...");
 	   System.out.println("The applicantName is: " +loanApplicantName);

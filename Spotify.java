@@ -9,7 +9,14 @@ static String userGender;
   public static boolean createUserAccount(String emailAddress, String password, String name, String dob, String gender){
 	   System.out.println("User Detials is as follow:--------");                    
 						boolean isAccountCreated = false;
-						boolean isUserNameValid = false;
+						isAccountCreated=validationCheck(emailAddress,password,name,dob,gender);
+						return isAccountCreated;
+	
+}
+
+public static boolean validationCheck(String emailAddress, String password, String name, String dob, String gender){
+	boolean isValidationChecked = false;
+	boolean isUserNameValid = false;
 						boolean isEmailAddressValid = false;
 						boolean isPasswordValid = false;
 						boolean isUserDobValid = false;
@@ -54,10 +61,9 @@ static String userGender;
 							System.out.println("Gender is not valid");
 						}
 						if(isUserNameValid==true && isEmailAddressValid==true && isUserDobValid==true && isUserGenderValid==true && isPasswordValid==true ){
-							isAccountCreated = true;
+							isValidationChecked = true;
 						}
-						return isAccountCreated;
-	
+						return isValidationChecked;
 }
 
   public static void readUserAccountDetails(){

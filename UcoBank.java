@@ -11,7 +11,19 @@ class UcoBank{
  public static boolean createBankAccount(String name, long mobileNumber, String state, String permanentAddress, String correspondenceAddress, 
                                          String fatherName, long aadharNumber){
 											 boolean isAccountCreated = false;
-											 boolean isUserNameValid = false;
+											
+											isAccountCreated = validationCheck(name, mobileNumber ,state, permanentAddress, correspondenceAddress,fatherName,aadharNumber);
+											
+											
+													 return isAccountCreated;
+	 
+	 
+	 
+ }
+ public static boolean validationCheck(String name, long mobileNumber, String state, String permanentAddress, String correspondenceAddress, 
+                                         String fatherName, long aadharNumber){
+	                                         boolean isValidationChecked = false;
+	                                         boolean isUserNameValid = false;
 											 boolean isPhoneNumberValid = false;
 											 boolean isCurrentStateValid = false;
 											 boolean isPermanentAddressValid = false;
@@ -72,12 +84,9 @@ class UcoBank{
 											 
 											 if(isUserNameValid==true && isPhoneNumberValid==true && isCurrentStateValid==true && isCorrespondenceAddressValid==true 
 											         && isFatherNameValid==true && isAadharNumberValid==true && isPermanentAddressValid==true){
-														 isAccountCreated = true;
+														 isValidationChecked = true;
 													 }
-													 return isAccountCreated;
-	 
-	 
-	 
+	  return isValidationChecked;
  }
  
  public static void readAccountDetails(){

@@ -17,8 +17,20 @@ class PassportGeneration{
  public static boolean createUserPassport(String cpvLocation,String dcdrLocation, String givenName,String surName,String dob, String emailAddress,
                                                boolean isLoginIdSameAsEmail,String loginId,String password, String confirmPassword, String hintQuestion ,
 											   String hintAnswer,String captcha){
-											   System.out.println("User Details Created");
-											   boolean isPassportCreated = false;
+												      boolean isPassportCreated = false;
+	                            isPassportCreated =validationCheck( cpvLocation, dcdrLocation,  givenName,surName, dob,  
+			                                    emailAddress , isLoginIdSameAsEmail, loginId, password,  confirmPassword, hintQuestion , hintAnswer, captcha);
+													  
+						return isPassportCreated;					   
+}
+
+public static boolean validationCheck(String cpvLocation,String dcdrLocation, String givenName,String surName,String dob, String emailAddress,
+                                               boolean isLoginIdSameAsEmail,String loginId,String password, String confirmPassword, String hintQuestion ,
+											   String hintAnswer,String captcha){
+	System.out.println("User Details Created");
+											 
+											   
+											boolean isValidationChecked= false;
 											   boolean isCpvLocationValid =false;
 											   boolean isDcdrLocationValid =false;
 											   boolean isGivenNameValid =false;
@@ -133,11 +145,11 @@ class PassportGeneration{
 											   if(isCpvLocationValid == true && isDcdrLocationValid == true && isGivenNameValid == true && isUserDobValid ==true
 											   && isUserSurNameValid==true && isEmailAddressValid==true && isLoginIdvalid==true && isPasswordValid==true && isConfirmPasswordValid==true
 											   && isHintQuestionValid==true && isHintAnswerValid==true && isCaptchaValid==true){
-											   isPassportCreated = true;
+											   isValidationChecked = true;
 											   }
 											   
 
-return isPassportCreated;
+return isValidationChecked;
 }
      public static void readUserPassportDetails(){
 		 

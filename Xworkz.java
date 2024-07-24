@@ -9,9 +9,18 @@ static String yop;
 static String stream;
 static String qualification;
 public static boolean createregistration(String fullName, String emailId, long mobileNumber, long whatsappNumber, String universitySeatNumber, String yearOfPassout,
-                                                       String streamStudied, String qualificationDegree){
+                                                            String streamStudied, String qualificationDegree){
 														boolean   isRegistrationCompleted = false;
-														boolean   isUserNameValid=false;
+			isRegistrationCompleted = validateUserDetails(fullName,emailId,mobileNumber,whatsappNumber,universitySeatNumber,yearOfPassout,streamStudied,qualificationDegree);
+														return isRegistrationCompleted;
+														
+		  
+}
+
+public static boolean validateUserDetails(String fullName, String emailId, long mobileNumber, long whatsappNumber, String universitySeatNumber, String yearOfPassout,
+                                                            String streamStudied, String qualificationDegree){
+                                                    boolean isValidationCompleted=false;
+ 													   boolean   isUserNameValid=false;
 														boolean isEmailAddressValid = false;
 														boolean isPhoneNumberValid = false;
 														boolean isWhatsappNumberValid = false;
@@ -79,10 +88,9 @@ public static boolean createregistration(String fullName, String emailId, long m
 														
  if(isUserNameValid==true && isPhoneNumberValid==true && isWhatsappNumberValid==true && isUsnValid==true && isEmailAddressValid==true && isStreamValid==true
           && isQualificationValid==true && isYopValid==true){
-			  isRegistrationCompleted=true;
+			  isValidationCompleted=true;
 		  }
-		  return isRegistrationCompleted;
-		  
+		  return isValidationCompleted;
 }
 public static void readRegistrationDetails(){
 			System.out.println(" Fetch details...");

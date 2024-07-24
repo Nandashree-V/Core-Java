@@ -11,7 +11,15 @@ static String  passwordConfirmation;
                       
 					  System.out.println("User Detials is as follow:--------");                    
 						boolean isAccountCreated = false;
-						boolean isUserNameValid = false;
+						isAccountCreated=validationCheck(name,emailAddress,phoneNumber,countryCode,password,confirmPassword);
+						
+						return isAccountCreated;
+	
+}
+
+public static boolean validationCheck(String name ,String emailAddress, long phoneNumber, String countryCode, String password, String confirmPassword){
+	                   boolean isValidationChecked= false;
+	                   boolean isUserNameValid = false;
 						boolean isEmailAddressValid = false;
 						boolean isPhoneNumberValid = false;
 						boolean isCountryCodeValid = false;
@@ -64,10 +72,9 @@ static String  passwordConfirmation;
 						
 						if(isUserNameValid==true && isEmailAddressValid==true && isPhoneNumberValid==true && isCountryCodeValid==true && isPasswordValid==true 
 						    && isConfirmPasswordValid==true){
-							isAccountCreated = true;
+							isValidationChecked = true;
 						}
-						return isAccountCreated;
-	
+		return isValidationChecked;				
 }
 
   public static void readUserAccountDetails(){
