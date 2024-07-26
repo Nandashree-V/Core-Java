@@ -65,7 +65,7 @@ public static boolean addTeaName(String teaName){
 		 int newlength = newPosition;
 		 teaNames = Arrays.copyOf(teaNames, newlength);
 		if(isTeaNameDeleted==false){
-			System.out.println(teaNameToDeleted + "Not fount");
+			System.out.println(teaNameToDeleted + "Not found");
 		}
 	 return isTeaNameDeleted;
  }

@@ -38,7 +38,7 @@ public static void main(String[] args){
   System.out.println("The updated Place name is "  +updatePlaceName);
   TouristCompany. getPlaceNames();
   
-  boolean deleteName = TouristCompany.deletePlaceName("New Delhi");
+  boolean deleteName = TouristCompany.deletePlaceName("Goa");
     System.out.println("The deleted Place name is: " +deleteName);
 	TouristCompany.getPlaceNames();
 	System.out.println("main ended");

@@ -51,7 +51,7 @@ public static boolean updateJuiceName(String oldJuiceName , String newJuiceName)
 		int position , newPosition;
 	 for(position=0 , newPosition=0 ; position<juiceNames.length;position++){
 		 if(juiceNames[position] != juiceNameToDelete){
-			 juiceNames[position] = juiceNames[newPosition];
+			 juiceNames[newPosition] = juiceNames[position];
 			 newPosition++;
 		 }
 		 else{

@@ -38,7 +38,7 @@ public static void main(String[] args){
   System.out.println("The updated product name is "  +updateName);
   AmazonProducts. getProductNames();
   
-  boolean deleteName = AmazonProducts.deleteProductName("Lights");
+  boolean deleteName = AmazonProducts.deleteProductName("Mobile Phone");
     System.out.println("The deleted product name is: " +deleteName);
 	AmazonProducts.getProductNames();
 	

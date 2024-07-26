@@ -40,7 +40,7 @@ public static void main(String[] args){
   System.out.println("The updated Medical name is "  +updateName);
   MedicalStore. getMedicineNames();
   
-  boolean deletMedicineName = MedicalStore.deleteMedicineName("Lisinopril");
+  boolean deletMedicineName = MedicalStore.deleteMedicineName("Albuterol");
     System.out.println("The deleted Medical name is: " +deletMedicineName);
 	MedicalStore.getMedicineNames();
 	System.out.println("main ended");

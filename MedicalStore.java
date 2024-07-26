@@ -8,10 +8,10 @@ static int start = 0;
 public static boolean createMedicineName(String medicineName){
 	boolean isMedicineNameCreated = false;
 	
-	if(start < medicineNames.length){
+	if(start >= medicineNames.length){
 		System.out.println("Array is out of bound");
 	}
-	if(medicineName != null){
+	else if(medicineName != null){
 		medicineNames[start++] = medicineName;
 		isMedicineNameCreated = true;
 	}
@@ -52,7 +52,7 @@ public static boolean updateMedicineName(String oldMedicineName , String newMedi
 	 int position , newPosition;
 	 for(position=0 , newPosition=0 ; position<medicineNames.length;position++){
 		 if(medicineNames[position] != medicineNameToDeleted){
-			 medicineNames[position] = medicineNames[newPosition];
+			 medicineNames[newPosition] = medicineNames[position];
 			 newPosition++;
 		 }
 		 else{

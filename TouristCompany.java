@@ -8,10 +8,10 @@ static int start = 0;
 public static boolean createPlaceName(String placeName){
 	boolean isPlaceNameCreated = false;
 	
-	if(start< placeNames.length){
+	if(start>= placeNames.length){
 		System.out.println("Array is out of bound");
 	}
-	if(placeName != null){
+	else if(placeName != null){
 		placeNames[start++] = placeName;
 		isPlaceNameCreated = true;
 	}
@@ -52,7 +52,7 @@ public static boolean updatePlaceName(String oldPlaceName , String newPlaceName)
 	 int position , newPosition;
 	 for(position=0 , newPosition=0 ; position<placeNames.length;position++){
 		 if(placeNames[position] != placeNameToDeleted){
-			 placeNames[position] = placeNames[newPosition];
+			 placeNames[newPosition] = placeNames[position];
 			 newPosition++;
 		 }
 		 else{

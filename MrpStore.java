@@ -9,10 +9,10 @@ static int start = 0;
 public static boolean createAlcoholName(String alcoholName){
 	boolean isAlcoholNameCreated = false;
 	
-	if(start < alcoholNames.length){
+	if(start >= alcoholNames.length){
 		System.out.println("Array is out of bound");
 	}
-	if(alcoholName != null){
+	else if(alcoholName != null){
 		alcoholNames[start++] = alcoholName;
 		isAlcoholNameCreated = true;
 	}
@@ -52,7 +52,7 @@ public static void getAlcoholNames(){
 	 int position , newPosition;
 	 for(position=0 , newPosition=0 ; position<alcoholNames.length;position++){
 		 if(alcoholNames[position] != alcoholNameToDeleted){
-			 alcoholNames[position] = alcoholNames[newPosition];
+			 alcoholNames[newPosition] = alcoholNames[position];
 			 newPosition++;
 		 }
 		 else{

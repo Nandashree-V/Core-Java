@@ -28,7 +28,7 @@ TeaPoint. getTeaNames();
   System.out.println("The updated tea name is "  +updateTeaName);
   TeaPoint. getTeaNames();
   
-  boolean deletTeaName = TeaPoint.deleteTeaName("classic Tea");
+  boolean deletTeaName = TeaPoint.deleteTeaName("Ginger Tea");
     System.out.println("The deleted tea name is: " +deletTeaName);
 	TeaPoint.getTeaNames();
   

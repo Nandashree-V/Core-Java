@@ -39,8 +39,8 @@ public static void main(String[] args){
   System.out.println("The updated Alcohol name is "  +updateName);
   MrpStore. getAlcoholNames();
   
-  boolean deletAlcoholName = MrpStore.deleteAlcoholName("Gimlet");
-    System.out.println("The deleted Alcohol name is: " +deletAlcoholName);
+  boolean deleteName = MrpStore.deleteAlcoholName("brandy");
+    System.out.println("The deleted Alcohol name is: " +deleteName);
 	MrpStore.getAlcoholNames();
 	System.out.println("main ended");
 }
