@@ -33,7 +33,13 @@ public static void main(String[] args){
 	placeName = TouristCompany.createPlaceName("New Delhi");
 	System.out.println("The Place name is added " +placeName);
 	
-	
+	TouristCompany.getPlaceNames();
+	 boolean updatePlaceName = TouristCompany.updatePlaceName("Kerala" , "Tirupati");
+  System.out.println("The updated Place name is "  +updatePlaceName);
+  TouristCompany. getPlaceNames();
+  
+  boolean deleteName = TouristCompany.deletePlaceName("New Delhi");
+    System.out.println("The deleted Place name is: " +deleteName);
 	TouristCompany.getPlaceNames();
 	System.out.println("main ended");
 }

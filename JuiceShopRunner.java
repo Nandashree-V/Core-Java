@@ -6,7 +6,7 @@ public static void main(String[] args){
 	boolean juiceName = JuiceShop.createJuiceNames("Mango Juice");
 	System.out.println("The Juice name is added " +juiceName);
 	
-	juiceName = JuiceShop.createJuiceNames("Mango Juice");
+	juiceName = JuiceShop.createJuiceNames("Butterfruit Juice");
 	System.out.println("The Juice name is added " +juiceName);
 	
 	juiceName = JuiceShop.createJuiceNames("Apple Juice");
@@ -20,9 +20,18 @@ public static void main(String[] args){
 	
 	juiceName = JuiceShop.createJuiceNames("Kiwi Juice");
 	System.out.println("The Juice name is added " +juiceName);
-	
-	
 	JuiceShop.getJuiceNames();
+	 
+	 boolean updateJuiceName = JuiceShop.updateJuiceName("Apple Juice" , "Graphes");
+	 System.out.println("The Juice is updated" +updateJuiceName);
+	 JuiceShop.getJuiceNames();
+	 
+	  boolean deleteJuiceName = JuiceShop.deleteJuiceName("Muskmelon Juice");
+	 System.out.println("The Juice is deleted" +deleteJuiceName);
+	 JuiceShop.getJuiceNames();
+	 
+	 
+	 
 	System.out.println("main ended");
 }
 }

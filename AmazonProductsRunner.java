@@ -32,9 +32,16 @@ public static void main(String[] args){
 	
 	productName = AmazonProducts.createProductsName("Lights");
 	System.out.println("The Product  Name is added " +productName);
-	
-	
 	AmazonProducts.getProductNames();
+	
+	 boolean updateName = AmazonProducts.updateProductName("Mobile Phone" , "Tab");
+  System.out.println("The updated product name is "  +updateName);
+  AmazonProducts. getProductNames();
+  
+  boolean deleteName = AmazonProducts.deleteProductName("Lights");
+    System.out.println("The deleted product name is: " +deleteName);
+	AmazonProducts.getProductNames();
+	
 	System.out.println("main ended");
 }
 

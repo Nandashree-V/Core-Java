@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class TouristCompany{
 
 static String placeNames[] = {null,null,null,null,null,null,null,null,null,null};
@@ -25,5 +27,43 @@ public static void getPlaceNames(){
 	}
 		
 }
-
+public static boolean updatePlaceName(String oldPlaceName , String newPlaceName){
+	 System.out.println("update method started");
+	         boolean isPlaceNameUpdated = false;
+	 for(int position = 0 ; position <placeNames.length;position++){
+		 if(placeNames[position] == oldPlaceName){
+			 placeNames[position] = newPlaceName;
+			 isPlaceNameUpdated = true;
+			 
+		 }
+	 }
+	 
+		 if( isPlaceNameUpdated == false){
+			 System.out.println(oldPlaceName +" Place Name Not Found");
+		 
+	 }
+	  System.out.println("update method ended");
+	 return isPlaceNameUpdated;
+	 
+ }
+ 
+ public static boolean deletePlaceName(String placeNameToDeleted){
+	 boolean isPlaceNameDeleted = false;
+	 int position , newPosition;
+	 for(position=0 , newPosition=0 ; position<placeNames.length;position++){
+		 if(placeNames[position] != placeNameToDeleted){
+			 placeNames[position] = placeNames[newPosition];
+			 newPosition++;
+		 }
+		 else{
+			 isPlaceNameDeleted = true;
+		 }
+	 }
+		 int newlength = newPosition;
+		 placeNames = Arrays.copyOf(placeNames, newlength);
+		if(isPlaceNameDeleted==false){
+			System.out.println(placeNameToDeleted + "Not found");
+		}
+	 return isPlaceNameDeleted;
+ }
 }
