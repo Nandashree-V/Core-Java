@@ -19,4 +19,16 @@ class Bank{
 			 
 		 }
 
+public void displayDetails(){
+	
+System.out.println("bank id: " +id);
+System.out.println("bank name: " +name);
+System.out.println("bank branchName: " +branchName);
+System.out.println("no of workers: " +noOfWorkers);
+System.out.println("bank manager: " +bankmanager);
+System.out.println("bank ifsc Code: " +ifscCode);
+System.out.println("bank swift Code: " +swiftCode);
+}
+
+
 }

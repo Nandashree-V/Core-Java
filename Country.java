@@ -16,4 +16,12 @@ public Country(String countryId,String name,int noOfStates,String pmName,String 
 	
 }
 
+public void displayDetails(){
+System.out.println("countryId: " +countryId);
+System.out.println("country name: " +name);
+System.out.println("number of states: " +noOfStates);
+System.out.println("prime minister: " +pmName);
+System.out.println("population: " +population);
+}
+
 }
