@@ -1,0 +1,60 @@
+1.  public -  public is a access specifier which  allows to access method anywhere outside the class
+    static - static is used because main method can be accessed without creating any object
+    void  - return type
+    main - name of the method
+    String[] args - command line argument
+
+   class -  class a template which as some state and behaviour
+   object - object is a instance/copy of class
+
+   JVM - Jvm abbreviates for java virtual machine which is present inside the jre which provides runtime environment for execution of java code
+   jre- jre abbreviates for java runtime environment which provides runtime environment for execution of java code
+  JDK - jdk is java development kit which contains java development tools, and jre which provides runtime environment for compiling and execution of java code.
+
+2. Constructor is a special type of method whose name is same as class name but doesn't have any return type.
+     there are two types of constructor: 1. default constructor   2.parameterized constructor
+     
+3.   this keyword is used to differentiate between instance variable and parameter variable. this() is used for constructor chaining means to chain from one constructor to another constructors
+
+4.  Main method is static because jvm can access main method without creating a object
+     there are two types of method static method and non-static method 
+
+5. Java class loaders are used for loading the class to the jvm during the compilation time. class loaders are present inside the jvm and make the execution process faster.
+
+6.
+
+7.  class Length{
+
+      public static void main(String[] args){
+         int arr[] = {12,3,2,45,67,6};
+            System.out.println("the length of the array is : "  +arr.length);
+}
+}
+
+
+8. No we cannot use instance variables inside the static method because instance variables are class level variables which are used outside the method
+
+9. Polymorphism is object behaving differently at given instance of time.There are two types of polymorphism compile time polymorphism and runtime polymorphism
+    compile time polymorphism is achieved by method overloading and run time polymorphism is achieved by method overriding. During run time polymorphism parent class is invoked and child class is        
+     implemented.
+
+10. Inheritance acquiring parent class properties into child class.
+  ex: class Engineer{
+          public void solveProblem(){
+                 System.out.println(enginners solve problems);
+}
+}
+  class EcEngineer extends Engineer{
+}
+class EngineerRunner{
+public static void main(String args[]){
+
+  EcEngineer ecEngineer  = new Ecengineer();
+         ecEngineer.solveProblems(); 
+
+}
+}
+
+
+
+  
